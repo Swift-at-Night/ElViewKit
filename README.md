@@ -6,6 +6,11 @@ This is a Swift package providing some view for SwiftUI.
 
 ## Swift @ home 🏠
 
+## Requirements
+
+- Xcode 12+
+- iOS13+ (Some features may require iOS14)
+
 ## How to use
 
 Xcode > File > Swift Packages > Add Package Dependency > Enter repository URL: https://github.com/jaesung-wwdc/ElViewKit
