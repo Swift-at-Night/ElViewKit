@@ -14,6 +14,10 @@ import SwiftUI
 public struct BlurView: UIViewRepresentable {
     public var style: UIBlurEffect.Style = .regular
     
+    public init(style: UIBlurEffect.Style) {
+        self.style = style
+    }
+    
     public func makeUIView(context: Context) -> UIVisualEffectView {
         return UIVisualEffectView(effect: UIBlurEffect(style: style))
     }
