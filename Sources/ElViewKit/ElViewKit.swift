@@ -10,7 +10,7 @@ public struct LibraryContent: LibraryContentProvider {
     @LibraryContentBuilder
     public var views: [LibraryItem] {
         LibraryItem(
-            BlurView(),
+            BlurView(style: .regular),
             title: "Blur View", category: .control
         )
         
