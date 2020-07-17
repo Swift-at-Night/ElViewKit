@@ -2,11 +2,9 @@
 
 # ElViewKit
 
-This is a Swift package providing some view for SwiftUI.
+A Swift package providing some view for SwiftUI.
 
-- Copyright: ©Jaesung
-
-## Swift @ home 🏠
+- Copyright: ©Jaesung Lee.
 
 ## Requirements
 
@@ -38,9 +36,12 @@ Image("backgroundImage")
 > **NOTE** When you set width value only, the image shows square image.
 
 ## How to use
+### Xcode project
+Xcode > File > Swift Packages > Add Package Dependency > Enter repository URL: https://github.com/Swift-at-Night/ElViewKit
 
-Xcode > File > Swift Packages > Add Package Dependency > Enter repository URL: https://github.com/jaesung-wwdc/ElViewKit
+> **IMPORTANT** The version of the package must be `0.1.2` or later
 
+- Example
 ```Swift
 import ElViewKit
 import SwiftUI
@@ -70,4 +71,28 @@ struct SomeView: View {
     }
 }
 
+```
+
+### Other Swift Package
+Your Swift Package > `Package.swift` > Add new package to `dependencies` > Add `"ElViewKit"` to the target > Then, now you can import `ElViewKit` in your source file.
+
+- Example
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "SomePackage",
+    products: [ 
+        ... 
+    ],
+    dependencies: [
+        .package(url: "https://github.com/Swift-at-Night/ElViewKit", from: "0.1.2") // 1. Add dependency to your swift package
+    ],
+    targets: [
+        .target(
+            name: "SomePackage",
+            dependencies: ["ElViewKit"]),   // 2. Add ElViewKit to the target as dependency
+        .testTarget(...),
+    ]
+)
 ```
