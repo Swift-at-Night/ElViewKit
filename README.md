@@ -1,3 +1,5 @@
+![screenshot](./screenshot.png)
+
 # ElViewKit
 
 This is a Swift package providing some view for SwiftUI.
@@ -29,14 +31,18 @@ struct SomeView: View {
                 .edgesIgnoringSafeArea(.all)
                 
             // Blur View
-            BlurView().edgesIgnoringSafeArea(.all)
+            BlurView(style: .regular).edgesIgnoringSafeArea(.all)
         
             // URL Image
-            URLImage.defaultName = "defaultImage"
-            URLImage("https://avatars1.githubusercontent.com/u/000111222333")
+            URLImage("https://avatars1.githubusercontent.com/u/68183707?s=200&v=4")
                 .frame(width: 100, height: 100)
                 .clipped()
         }            
+    }
+    
+    init() {
+        // URL Image
+        URLImage.defaultName = "defaultImage"
     }
 }
 
