@@ -1,12 +1,12 @@
+![screenshot](./screenshot.png)
+
+# ElViewKit
+
 ![Swift Package](https://img.shields.io/badge/Swift_Package-fa7343?style=for-the-badge&logo=swift&logoColor=white)
 ![Swift 5.3](https://img.shields.io/badge/Swift-5.3+-fa7343?style=for-the-badge&logo=swift&logoColor=white)
 ![SwiftUI 2](https://img.shields.io/badge/SwiftUI-2+-blue?style=for-the-badge&logo=swift&logoColor=white)
 ![Xcode 12](https://img.shields.io/badge/Xcode-12+-1575F9?style=for-the-badge&logo=xcode&logoColor=white)
 ![iOS 13+](https://img.shields.io/badge/iOS-13+-999999?style=for-the-badge&logo=apple&logoColor=white)
-
-![screenshot](./screenshot.png)
-
-# ElViewKit
 
 A Swift package providing some view for SwiftUI.
 
