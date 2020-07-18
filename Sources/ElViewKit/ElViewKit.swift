@@ -10,6 +10,12 @@ public struct LibraryContent: LibraryContentProvider {
     @LibraryContentBuilder
     public var views: [LibraryItem] {
         LibraryItem(
+            Corner(alignment: .topLeft, content: {
+                Text("Hello world!")
+            })
+        )
+        
+        LibraryItem(
             BlurView(style: .regular),
             title: "Blur View", category: .control
         )
