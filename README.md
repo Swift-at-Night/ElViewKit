@@ -19,17 +19,27 @@ A Swift package providing some view for SwiftUI.
 
 ## Features
 ### View
-#### BlurView
-```swift
-BlurView(style: .regular)
-```
-The view that has blur effect. This view allows you to blur a specific area
 #### URLImage
 ```swift
 URLImage("https://someurl")
 ```
 The view that shows image based on URL. 
 > **IMPORTANT** You have to set `URLImage.defaultName` before loading URL image. I recommend that you set the value inside of initializer.
+
+#### BlurView
+```swift
+BlurView(style: .regular)
+```
+The view that has blur effect. This view allows you to blur a specific area
+
+#### Corner
+```swift
+Corner(alignment: .bottomRight) {
+    // Content
+    Text("Swift@Night")
+}
+```
+The view that moves content to a specific corner.
 
 ### Modifier
 #### Image resizer
@@ -68,6 +78,16 @@ struct SomeView: View {
             URLImage("https://avatars1.githubusercontent.com/u/68183707?s=200&v=4")
                 .frame(width: 100, height: 100)
                 .clipped()
+                .overlay (
+
+                    // Corner
+                    Corner(alignment: .bottomRight) {
+                        Image(systemName: "moon.circle.fill")
+                            .resizedToFill(width: 50)
+                            .foregroundColor(.gray)
+                    }
+                    
+                )
         }            
     }
     
