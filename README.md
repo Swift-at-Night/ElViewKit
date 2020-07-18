@@ -10,7 +10,7 @@
 
 A Swift package providing some view for SwiftUI.
 
-- Copyright: ©Jaesung Lee.
+- Copyright: ©[Jaesung Lee.](https://github.com/jaesung-wwdc)
 
 ## Requirements
 
